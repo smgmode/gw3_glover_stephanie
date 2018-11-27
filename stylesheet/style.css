@@ -1,0 +1,155 @@
+* {
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.riverdale-comic {
+  background-image: url("../images/blank-notebook-paper-163031.jpg");
+	background-attachment: fixed;
+  background-size: cover;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 4.250em;
+	padding: 200px 0;
+	color: Pink;
+	text-align: center;
+}
+
+.riverdale-comic img {
+	max-width: 100%;
+}
+
+.flex-grid {
+	display: flex;
+}
+
+.flex-grid figure {
+	font-size: 1.0em;
+}
+
+.col {
+	flex: 1;
+	justify-content: space-between;
+}
+
+.container1 {
+	-Webkit-perspective: 1000px;
+					perspective: 1000px;
+	margin: 23em;
+	transform-style: perserve-3d;
+}
+
+img {
+	transition: all .5s ease;
+	-webkit-transform: rotateX(0deg);
+	-webkit-transform-origin-y: 300px;
+}
+
+img:hover {
+	-webkit-transform: rotateX(-40deg);
+}
+
+.riverdale-characters {
+	background-image: url("../images/white_blank_notebook.jpg");
+	background-attachment: fixed;
+  background-size: cover;
+	padding: 200px 0;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 3.250em;
+	color: black;
+	text-align: center;
+}
+
+.riverdale-characters img {
+	max-width: 100%;
+}
+
+.flex-grid2 {
+	display: flex;
+}
+
+.flex-grid2 p {
+	font-size: 1.0em;
+}
+
+.col {
+	flex: 1;
+}
+
+.supporting-characters {
+  background-image: url("../images/blank-notebook-paper-163031.jpg");
+	background-attachment: fixed;
+  background-size: cover;
+	padding: 200px 0;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 3.250em;
+	color: pink;
+	text-align: center;
+}
+
+.supporting-characters img {
+	max-width: 100%;
+}
+
+.flex-grid3 {
+	display: flex;
+}
+
+.flex-grid3 p {
+	font-size: 1.0em;
+}
+
+.col {
+	flex: 1;
+}
+
+.supporting-charactersII {
+	background-image: url("../images/white_blank_notebook.jpg");
+	background-attachment: fixed;
+  background-size: cover;
+	padding: 200px 0;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size: 3.250em;
+	color: black;
+	text-align: center;
+}
+
+.supporting-charactersII img {
+	max-width: 100%;
+}
+
+.flex-grid4 {
+	display: flex;
+}
+
+figcaption {
+	font-size: 1.0em;
+}
+
+.col {
+	flex: 1;
+}
+
+
+footer {
+  background: grey;
+  display: flex;
+  justify-content: center;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 600px) {
+	.flex-grid, .flex-grid2, .flex-grid3, .flex-grid4 {
+		display: block;
+	}
+}
+
+@media screen (min-width: 320px) {
+	body {
+		display: flex;
+	}
+}
