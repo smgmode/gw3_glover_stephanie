@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: Arial;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display:block;
+}
+
+html {
+	background: url(images/pops3.gif) no-repeat center fixed;
+	background-size: cover;
+}
+
+body {
+	color: black;
+	max-height: 100vh;
+}
+
+header {
+	color: royalblue;
+	height: 60px;
+	display: block;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Bungee Outline', cursive;
+	font-size: 3.25em;
+	text-align: center;
+	margin-top: -35px;
+}
+
+.content {
+	width: 420px;
+  height: 315px;
+	position:absolute;
+    left:0; right:0;
+    top:0; bottom:0;
+	margin:auto;
+	max-width:100%;
+	max-height:100%;
+	overflow: visible;
+}
+
+a {
+	color: #C64735;
+	font-size: 1.5em;
+	font-weight: bold;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	margin-top: 34%;
+	margin-left: 8%;
+	background: #212139;
+	padding: .25em;
+	text-decoration: none;
+	border-radius: .25em;
+	box-shadow: -3px 0 0 .25em #0E0E10;
+}
+
+a:hover {
+	background: black;
+	box-shadow: 0 0 0 .1em #EA1325,
+	-3px 0 0 .25em #0E0E10;
+}
+
+/*********SIGNAGE ANIMATION ***********/
+a {
+-webkit-animation-name: signchange; /* Safari 4.0 - 8.0 */
+-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+animation-name: signchange;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes signchange {
+from {color: #EA1325;}
+to {color: #FCE66C;}
+}
+
+/* Standard syntax */
+@keyframes signchange {
+from {color: #EA1325;}
+to {color: #FCE66C;}
+}
+
+/***********END SIGNAGE ANIMATION **************/
+
+i {
+  border: solid #EA1325;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 3px;
+	margin-left: 9.5%;
+	text-decoration: none;
+}
+
+.down {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+/**************START MIN WIDTH 1215PX ********/
+
+@media (min-width: 1215px) {
+	.content {
+		width: 32%;
+		height: 45%;
+	}
+	a {
+		margin-top: 38%;
+		margin-left: 2%;
+	}
+	i {
+		margin-left: 5%;
+	}
+}
+/************* END MIN WIDTH 1215PX ********/
