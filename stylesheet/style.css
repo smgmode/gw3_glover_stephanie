@@ -4,11 +4,14 @@
 	border: 0;
 }
 
-body {
-	font-family: 'Montserrat', sans-serif;
+h1, h2, h3, figcaption {
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+	-webkit-animation-name: hinge;
+	animation-name: hinge;
 }
 
-h1, h2, h3 {
+#logo {
 	-webkit-animation-duration: 20s;
 	animation-duration: 20s;
 	-webkit-animation-name: hinge;
@@ -22,13 +25,22 @@ h1, h2, h3 {
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size: 2.250em;
 	padding: 200px 0;
-	color: Pink;
+	color: #E75480;
 	text-align: center;
 }
 
 .riverdale-comic img {
-	height: auto;
 	max-width: 100%;
+}
+
+.riverdale-comic figcaption {
+	color: #E75480;
+	font-size: 1.0em;
+}
+
+.riverdale-comic p {
+	font-family: 'Montserrat', sans-serif;
+	color: pink;
 }
 
 .flex-grid {
@@ -90,7 +102,7 @@ img:hover {
 	padding: 200px 0;
 	font-family: 'Luckiest Guy', sans-serif;
 	font-size: 2.250em;
-	color: pink;
+	color: #E75480;
 	text-align: center;
 }
 
@@ -137,6 +149,10 @@ figcaption {
 	flex: 1;
 }
 
+.supporting-charactersII h3 {
+	color: #E75480;
+}
+
 
 footer {
   background: grey;
@@ -148,12 +164,6 @@ footer {
 @media (max-width: 900px) {
 	.flex-grid, .flex-grid2, .flex-grid3, .flex-grid4 {
 		display: block;
-	}
-}
-
-@media screen (min-width: 320px) {
-	body {
-		display: flex;
 	}
 }
 
