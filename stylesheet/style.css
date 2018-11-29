@@ -8,23 +8,32 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
+h1, h2, h3 {
+	-webkit-animation-duration: 20s;
+	animation-duration: 20s;
+	-webkit-animation-name: hinge;
+	animation-name: hinge;
+}
+
 .riverdale-comic {
   background-image: url("../images/blank-notebook-paper-163031.jpg");
 	background-attachment: fixed;
   background-size: cover;
 	font-family: 'Luckiest Guy', sans-serif;
-	font-size: 4.250em;
+	font-size: 2.250em;
 	padding: 200px 0;
 	color: Pink;
 	text-align: center;
 }
 
 .riverdale-comic img {
+	height: auto;
 	max-width: 100%;
 }
 
 .flex-grid {
 	display: flex;
+	flex-wrap:nowrap;
 }
 
 .flex-grid figure {
@@ -32,15 +41,9 @@ body {
 }
 
 .col {
-	flex: 1;
-	justify-content: space-between;
-}
-
-.container1 {
-	-Webkit-perspective: 1000px;
-					perspective: 1000px;
-	margin: 23em;
-	transform-style: perserve-3d;
+	flex-wrap: wrap;
+  flex: 1;
+	justify-content: center;
 }
 
 img {
@@ -59,7 +62,7 @@ img:hover {
   background-size: cover;
 	padding: 200px 0;
 	font-family: 'Luckiest Guy', sans-serif;
-	font-size: 3.250em;
+	font-size: 2.250em;
 	color: black;
 	text-align: center;
 }
@@ -73,7 +76,7 @@ img:hover {
 }
 
 .flex-grid2 p {
-	font-size: 1.0em;
+	font-size: .5em;
 }
 
 .col {
@@ -86,7 +89,7 @@ img:hover {
   background-size: cover;
 	padding: 200px 0;
 	font-family: 'Luckiest Guy', sans-serif;
-	font-size: 3.250em;
+	font-size: 2.250em;
 	color: pink;
 	text-align: center;
 }
@@ -100,7 +103,7 @@ img:hover {
 }
 
 .flex-grid3 p {
-	font-size: 1.0em;
+	font-size: .5em;
 }
 
 .col {
@@ -113,7 +116,7 @@ img:hover {
   background-size: cover;
 	padding: 200px 0;
 	font-family: 'Luckiest Guy', sans-serif;
-	font-size: 3.250em;
+	font-size: 2.250em;
 	color: black;
 	text-align: center;
 }
@@ -142,7 +145,7 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 	.flex-grid, .flex-grid2, .flex-grid3, .flex-grid4 {
 		display: block;
 	}
@@ -153,3 +156,39 @@ footer {
 		display: flex;
 	}
 }
+
+@keyframes hinge {
+	0% {
+		-webkit-transform-origin: top left;
+		transform-origin: top left;
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+	}
+	20%,
+	60% {
+		-webkit-transforms: rotate3d(0, 0, 1,
+			80deg);
+			transform: rotate3d(0, 0, 1, 80deg);
+			-webkit-transform-origin: top left;
+			transform-origin: top left;
+			-webkit-animation-timing-function: ease-in-out;
+			animation-timing-function: ease-in-out;
+		}
+		40%,
+		80% {
+			-webkit-transform: rotate3d(0, 0, 1,
+				60deg);
+				transform: rotate3d(0, 0, 1, 60deg);
+				-webkit-transform-origin: top left;
+				transform-origin: top left;
+				-webkit-animation-timing-function: ease-in-out;
+				animation-timing-function: ease-in-out;
+				opacity: 1;
+		}
+		to {
+			-webkit-transform: translate3d(0, 700px,
+				0);
+				transform: translate3d(0, 700px, 0);
+				opacity: 0;
+		}
+	}
